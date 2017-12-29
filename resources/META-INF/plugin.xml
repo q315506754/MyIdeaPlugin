@@ -30,12 +30,13 @@
 
   <actions>
     <!-- Add your actions here -->
-    <action id="JlPlugins.hello" class="HelloAction" text="MenuName你好" description="状态栏hover描述">
+    <action id="JlPlugins.hello" class="com.jiangli.HelloAction" text="MenuName你好" description="状态栏hover描述">
       <add-to-group group-id="EditMenu" anchor="after" relative-to-action="$Redo"/>
       <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt OPEN_BRACKET"/>
     </action>
-    <action id="JlAction.trans" class="TransAction" text="翻译trans" description="tr 描述">
+    <action id="JlAction.trans" class="com.jiangli.TransAction" text="翻译trans" description="tr 描述">
       <add-to-group group-id="CodeMenu" anchor="after" relative-to-action="Generate"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="shift alt R"/>
     </action>
   </actions>
 
